@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TokSave — Download Video TikTok Tanpa Watermark</title>
+<meta name="description" content="Tempel link TikTok, unduh videonya bersih tanpa watermark dalam hitungan detik.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">
+        <span class="split split-cyan">tok</span>
+        <span class="split split-pink">tok</span>
+        <span class="split-base">tok</span>
+      </span><span class="brand-suffix">save</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="headline" data-text="DOWNLOAD VIDEO TIKTOK. BERSIH.">
+        <span class="glitch-layer layer-cyan" aria-hidden="true">DOWNLOAD VIDEO<br>TIKTOK. BERSIH.</span>
+        <span class="glitch-layer layer-pink" aria-hidden="true">DOWNLOAD VIDEO<br>TIKTOK. BERSIH.</span>
+        <span class="glitch-base">DOWNLOAD VIDEO<br>TIKTOK. BERSIH.</span>
+      </h1>
+      <p class="subhead">Tanpa watermark, tanpa aplikasi tambahan. Tempel link, tunggu beberapa detik.</p>
+
+      <form id="downloadForm" class="input-pill">
+        <input
+          id="tiktokUrl"
+          type="url"
+          inputmode="url"
+          placeholder="Tempel link video TikTok di sini..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit" id="submitBtn">
+          <span class="btn-label">Ambil Video</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <p id="errorMsg" class="error-msg" role="alert"></p>
+
+      <article id="resultCard" class="result-card hidden">
+        <div class="result-thumb">
+          <img id="resultThumb" alt="">
+        </div>
+        <div class="result-body">
+          <p class="result-eyebrow">Video ditemukan</p>
+          <h2 id="resultTitle" class="result-title"></h2>
+          <p id="resultAuthor" class="result-author"></p>
+          <div class="result-actions">
+            <a id="dlClean" class="action-btn action-primary" download>
+              Unduh Tanpa Watermark
+            </a>
+            <a id="dlWatermark" class="action-btn" download>
+              Unduh Dengan Watermark
+            </a>
+            <a id="dlAudio" class="action-btn" download>
+              Unduh Audio (MP3)
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="steps" aria-label="Cara pakai">
+      <div class="step">
+        <span class="step-index">01</span>
+        <p class="step-label">Salin link video dari aplikasi TikTok</p>
+      </div>
+      <div class="step">
+        <span class="step-index">02</span>
+        <p class="step-label">Tempel di kolom di atas, klik Ambil Video</p>
+      </div>
+      <div class="step">
+        <span class="step-index">03</span>
+        <p class="step-label">Pilih format, video langsung terunduh</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Gunakan sewajarnya. Video yang kamu unduh tetap milik kreator aslinya — hormati izin dan hak ciptanya.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
