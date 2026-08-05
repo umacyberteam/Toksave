@@ -1,4 +1,4 @@
-fetch('maintenance.json').then(r=>r.json()).then(c=>{if(c.maintenance){document.body.innerHTML=`<div style="font-family:Arial;height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column"><h1>🚧 Server/Website Sedang Maintenance</h1><p>Diharapkan tunggu sebentar.</p></div>`;throw new Error('maintenance')}}).catch(()=>{});
+fetch('maintenance.json').then(r=>r.json()).then(c=>{if(c.maintenance){document.body.innerHTML=`<div style="font-family:Arial;height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column"><h1>Server/Website Sedang Maintenance</h1><p>Diharapkan Tunggu Beberapa Menit.</p></div>`;throw new Error('maintenance')}}).catch(()=>{});
 const form = document.getElementById('downloadForm');
 const urlInput = document.getElementById('tiktokUrl');
 const submitBtn = document.getElementById('submitBtn');
