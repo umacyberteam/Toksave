@@ -46,9 +46,9 @@ form.addEventListener('submit', async (event) => {
     document.getElementById('resultTitle').textContent = data.title;
     document.getElementById('resultAuthor').textContent = data.author ? `@${data.author}` : '';
 
-    document.getElementById('dlClean').href = buildDownloadLink(data.noWatermarkUrl, 'toksave-tanpa-watermark.mp4');
-    document.getElementById('dlWatermark').href = buildDownloadLink(data.watermarkUrl, 'toksave-watermark.mp4');
-    document.getElementById('dlAudio').href = buildDownloadLink(data.audioUrl, 'toksave-audio.mp3');
+    document.getElementById('dlClean').href = buildDownloadLink(data.noWatermarkUrl, 'TokSaveNOWM.mp4');
+    document.getElementById('dlWatermark').href = buildDownloadLink(data.watermarkUrl, 'TokSaveWM.mp4');
+    document.getElementById('dlAudio').href = buildDownloadLink(data.audioUrl, 'TokSaveAudio.mp3');
 
     resultCard.classList.remove('hidden');
   } catch (err) {
